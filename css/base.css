@@ -1,0 +1,17 @@
+body {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  height: 10px;
+  width: 70px;
+  background: var(--main-color-second);
+}

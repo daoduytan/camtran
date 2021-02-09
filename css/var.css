@@ -1,0 +1,10 @@
+:root {
+  /* color */
+  --main-color: #111;
+  --main-color-light: #aaa;
+  --main-color-second: #fc1923;
+
+  /* font */
+  --main-font-family: "Montserrat", sans-serif;
+  --main-font-family-second: "Tenor Sans", sans-serif;
+}

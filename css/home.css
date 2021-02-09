@@ -1,0 +1,129 @@
+/* ---------------- HOME ---------------- */
+.main-container {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* ---------------- HOME ---------------- */
+
+/* ---------------- PROJECTS ---------------- */
+.projects-list article {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .projects-list article {
+    width: 33.333%;
+  }
+}
+
+.for-mobile .projects-list article {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.single-project {
+  position: relative;
+  height: auto;
+  display: inline-block;
+}
+
+.single-project .caption {
+  display: block;
+  font-weight: 200;
+}
+
+.single-project .caption h4 {
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  transform: translateY(20%);
+  font-family: var(--main-font-family-second);
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: lowercase;
+  line-height: 30px;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+
+.single-project .caption span {
+  font-size: 9px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: var(--main-color-light);
+  font-weight: 600;
+}
+
+a.single-project:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 1025px) {
+  .single-project .caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 30px;
+    background-color: #f9f7f3;
+    color: #4b4f33;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .single-project .caption .align {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .single-project:hover .caption {
+    opacity: 1;
+  }
+  .single-project:hover .caption h4 {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single-project .caption {
+    position: relative;
+    color: #231f20;
+    opacity: 1;
+    padding: 20px 0 15px 0;
+  }
+
+  .single-project .caption h4 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 4px;
+  }
+  .single-project .caption span {
+  }
+  a.single-project:hover {
+    color: #231f20;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-project .caption h4 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
+  a.single-project,
+  a.single-project:hover {
+    color: #231f20;
+  }
+}
+/* ---------------- PROJECTS ---------------- */
